@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.ovapp.FilterController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kies een vervoersmiddel:" />
+
+            <!-- CheckBoxes voor multi-select -->
+            <CheckBox fx:id="trainCheck" layoutX="10.0" layoutY="50.0" text="Trein" />
+            <CheckBox fx:id="busCheck" layoutX="10.0" layoutY="80.0" text="Bus" />
+            <CheckBox fx:id="metroCheck" layoutX="10.0" layoutY="110.0" text="Metro" />
+
+            <!-- Output -->
+            <TextArea fx:id="outputArea" layoutX="150.0" layoutY="50.0" prefHeight="130.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
